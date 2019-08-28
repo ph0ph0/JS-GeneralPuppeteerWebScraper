@@ -31,7 +31,7 @@ async function scopingFunction() {
 
     console.log(`pageurl1: ${page.url()}`)
 
-    Scroll
+    // Scroll
 
     await page.evaluate(async () => {
       await new Promise((resolve, reject) => {
@@ -52,11 +52,10 @@ async function scopingFunction() {
         }, 100);
       });
     });
-    console.log(`pageurl3: ${page.url()}`)
 
-    console.log(`deadBeef 4) starting productLinks scrape`)
+    console.log(`deadBeef) starting productLinks scrape`)
 
-    //We need to wait for 5 seconds to ensure that all of hte links we want to scrape have loaded
+    //We need to wait for 5 seconds to ensure that all of the links we want to scrape have loaded
     await page.waitFor(5000)
 
     let productLinks = await extractProductLinks()
