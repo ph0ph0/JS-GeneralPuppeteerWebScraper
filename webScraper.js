@@ -31,8 +31,6 @@ async function scopingFunction() {
 
     console.log(`pageurl1: ${page.url()}`)
 
-    console.log(`pageurl2: ${page.url()}`)
-
     Scroll
 
     await page.evaluate(async () => {
